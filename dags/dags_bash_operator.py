@@ -5,7 +5,7 @@ import pendulum
 from airflow.operators.bash import BashOperator 
 
 with DAG(
-    dag_id="example_bash_operator",
+    dag_id="dags_bash_operator",
     # dag_id: 화면에서 보이는 dag명(python 파일명과 관계x. but 일반적으로 dag파일명과 py파일명 일치시키는게 표준)
     schedule="0 0 * * *", # cron 주기
     start_date=pendulum.datetime(2021, 1, 1, tz="Asia/Seoul"), # Asia/Seoul 기준 2011-01-01 부터 스타트
