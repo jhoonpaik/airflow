@@ -23,7 +23,7 @@ with DAG(
     )
 
     t4= EmptyOperator(
-        task_id="t5"
+        task_id="t4"
     )
 
     t5= EmptyOperator(
@@ -39,7 +39,7 @@ with DAG(
     )
 
     t8= EmptyOperator(
-        task_id="t7"
+        task_id="t8"
     )
 
     t1 >> [t2, t3] >> t4
