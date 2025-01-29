@@ -7,7 +7,7 @@ from airflow.operators.bash import BashOperator
 
 
 with DAG(
-    dag_id="dags_bash_opeartor", # dag명(보통 .py 파일명과 일치시키는 걸 권장)
+    dag_id="dags_bash_operator", # dag명(보통 .py 파일명과 일치시키는 걸 권장)
     schedule="0 0 * * *", # dag 실행 주기 
     start_date=pendulum.datetime(2021, 1, 1, tz="Asia/Seoul"),
     catchup=False, # True로 설정시 start_date 부터 현재 날짜까지 dag가 한꺼번에 실행됨.
