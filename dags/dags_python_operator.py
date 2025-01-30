@@ -16,7 +16,7 @@ with DAG(
     # 랜덤으로 과일 가져오는 함수
     def select_fruit():
         fruit = ['APPLE', 'BANANA', 'ORANGE', 'AVOCADO']
-        rand_int = random.randiant(0,3) #0,1,2,3 중 하나 리턴
+        rand_int = random.randint(0,3) #0,1,2,3 중 하나 리턴
         
         return fruit[rand_int]
     
