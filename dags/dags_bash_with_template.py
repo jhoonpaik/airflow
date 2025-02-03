@@ -25,7 +25,7 @@ with DAG(
 
 
         },
-        bash_command= 'echo $START_DATE && $END_DATE' # Acmd && Bcmd: A command가 실행되면, B command도 실행
+        bash_command= 'echo $START_DATE && echo $END_DATE' # Acmd && Bcmd: A command가 실행되면, B command도 실행
     )
 
     bash_t1 >> bash_t2
