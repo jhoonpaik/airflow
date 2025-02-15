@@ -7,7 +7,7 @@ from airflow.decorators import task
 
 
 with DAG(
-    dag_id = "dags_python_with_branch_operator",
+    dag_id = "dags_python_with_branch_decorator",
     start_date = datetime(2023, 4, 1),
     schedule=None,
     catchup=False
